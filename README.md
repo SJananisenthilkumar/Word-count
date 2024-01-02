@@ -19,16 +19,18 @@ count the number of words
 Giving print statement for getting output
 ## PROGRAM:
 ```
-#Developed by: JANANI S
-#Reference Number:212223230086
-test_string="python programming in linear algebra"
-print("The original string is:",test_string)
-res=len(test_string.split())
-print("The number of words in strings are:",str(res))
+#Program to find the Word Count
+#Developed by : JANANI S
+#Register Number : 23013409
+num=0
+with open("file1.txt","r") as f1:
+  for i in f1:
+    word=i.split()
+    num += len(word)
+print("The number of words are in the file is ",num)
 ```
 ### OUTPUT:
-![image](https://github.com/SJananisenthilkumar/Word-count/assets/144871139/76c0025f-d643-4745-9e35-aae9799abf21)
-
+![image](https://github.com/SJananisenthilkumar/Word-count/assets/144871139/c264de03-4cfb-4f6e-a77a-411b46c10c68)
 
 ## RESULT:
 Thus the program is written to find the word count from a text.
